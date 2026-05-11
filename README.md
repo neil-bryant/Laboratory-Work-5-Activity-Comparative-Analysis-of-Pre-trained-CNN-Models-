@@ -30,9 +30,9 @@ Performance Comparison Table
 | Teachable Machine    | 24.40%       | 6.2387   | 20.80%    | 24.19% | 22.00%   | 0.6338 | Label order mismatch    |
 | LW3 — Custom CNN     | 93.20%       | 0.2215   | 94.91%    | 93.18% | 92.89%   | 0.9644 | Baseline improved model |
 | LW4 — Enhanced CNN   | 96.70%       | 0.0644   | 97.80%    | 96.85% | 96.68%   | 0.9963 | Best custom CNN         |
-| LW5 — InceptionV3    | 94.50%       | 0.1500   | 94.87%    | 94.74% | 94.64%   | 0.9961 | Pre-trained (ImageNet)  |
-| LW5 — EfficientNetB0 | 97.30%       | 0.0663   | 98.29%    | 97.71% | 97.49%   | 0.9977 | Pre-trained (ImageNet)  |
-| LW5 — MobileNetV2    | 97.70%       | 0.0596   | 98.47%    | 98.05% | 97.88%   | 0.9989 | Best overall            |
+| LW5 — InceptionV3    | 83.91%      | 0.3643     |  88.49%    | 84.24% | 84.24%  |0.9891 | Pre-trained (ImageNet)  |
+| LW5 — EfficientNetB0 | 100.00%    |  0.0094     | 98.29%    |  100.00% |  100.00%   |  1.0000|  Best overall   |
+| LW5 — MobileNetV2    | 99.59%      | 0.0282   |  99.66%    |  99.66%  | 97.88%   | 0.9999 |       Pre-trained (ImageNet)    |
 
 
 
