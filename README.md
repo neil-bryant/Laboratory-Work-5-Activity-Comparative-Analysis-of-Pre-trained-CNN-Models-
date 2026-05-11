@@ -4,6 +4,36 @@ https://drive.google.com/drive/folders/1YayFfeVTXGSpMxTL2guComR6eYvTnwfJ?usp=sha
 Goggle Collab:
 https://colab.research.google.com/drive/1l337kLVaxvefZZpu3u90tqfwtREZRzFX?usp=sharing
 
+Comparative Analysis of Pre-trained CNN Models for Custom Image Classification
+
+Pre-trained Models Used
+MobileNetV2 — Fastest, best for mobile deployment
+EfficientNetB0 — Best overall accuracy
+InceptionV3 — Stable, strong baseline
+
+Dataset
+20 Mushroom Species — 250 images per class
+Total Images: 5,000
+Split: 80% Training / 20% Validation
+Image Size: 224×224 pixels
+
+Performance Comparison Table
+
+| Model          | Train Acc | Train Loss | Val Acc    | Val Loss   | Precision  | Recall     | F1-Score   | AUC        |
+| -------------- | --------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
+| MobileNetV2    | 96.70%    | 0.1167     | **97.70%** | **0.0596** | **98.47%** | **98.05%** | **97.88%** | **0.9989** |
+| EfficientNetB0 | 96.78%    | 0.1075     | 97.30%     | 0.0663     | 98.29%     | 97.71%     | 97.49%     | 0.9977     |
+| InceptionV3    | 88.75%    | 0.5236     | 94.50%     | 0.1500     | 94.87%     | 94.74%     | 94.64%     | 0.9961     |
+
+| Model                | Val Accuracy | Val Loss | Precision | Recall | F1-Score | AUC    | Notes                   |
+| -------------------- | ------------ | -------- | --------- | ------ | -------- | ------ | ----------------------- |
+| Teachable Machine    | 24.40%       | 6.2387   | 20.80%    | 24.19% | 22.00%   | 0.6338 | Label order mismatch    |
+| LW3 — Custom CNN     | 93.20%       | 0.2215   | 94.91%    | 93.18% | 92.89%   | 0.9644 | Baseline improved model |
+| LW4 — Enhanced CNN   | 96.70%       | 0.0644   | 97.80%    | 96.85% | 96.68%   | 0.9963 | Best custom CNN         |
+| LW5 — InceptionV3    | 94.50%       | 0.1500   | 94.87%    | 94.74% | 94.64%   | 0.9961 | Pre-trained (ImageNet)  |
+| LW5 — EfficientNetB0 | 97.30%       | 0.0663   | 98.29%    | 97.71% | 97.49%   | 0.9977 | Pre-trained (ImageNet)  |
+| LW5 — MobileNetV2    | 97.70%       | 0.0596   | 98.47%    | 98.05% | 97.88%   | 0.9989 | Best overall            |
+
 
 
 GUIDE QUESTIONS (FINAL REFLECTION)
