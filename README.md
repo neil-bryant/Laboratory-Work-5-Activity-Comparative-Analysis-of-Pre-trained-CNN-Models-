@@ -52,6 +52,7 @@ InceptionV3 had the lowest performance with 83.71% validation accuracy. Early St
  EfficientNetB0 achieved the lowest validation loss (0.0094), showing excellent performance and matching its 100% accuracy. MobileNetV2 followed with a low validation loss of 0.0282 and high accuracy of 99.59%. Meanwhile, InceptionV3 had the highest validation loss (0.3643), which corresponded to its lower accuracy of 83.71%, indicating weaker optimization performance.
 
 B. Evaluation Metrics
+
 4. Why is accuracy not enough to evaluate a model?
 Accuracy can be misleading in imbalanced datasets because a model may achieve high accuracy by predicting only the majority class while failing to identify minority classes correctly. It also treats all errors equally, even when some mistakes are more critical than others. Metrics like Precision, Recall, and F1-score provide a better understanding of model performance by evaluating specific types of classification errors.
 
@@ -87,6 +88,7 @@ The exact image regions cannot be confirmed without visually inspecting the Grad
 Without visual heatmaps, only inference is possible. EfficientNetB0 failed Grad-CAM due to a layer error. Between the others, MobileNetV2 (43.48% confidence) likely focused on more relevant features than InceptionV3 (7.36%), which showed weak and uncertain attention.
 
 F. Model Comparison & Improvement
+
 14. Which model would you recommend for deployment? Why?
 EfficientNetB0 is the best choice for deployment because it achieved 100% validation accuracy, the lowest validation loss (0.0094), perfect AUC (1.0000), and perfect Precision, Recall, and F1-score. This means it made no classification errors on the validation set. Although MobileNetV2 also performed strongly (99.59% accuracy), EfficientNetB0 was consistently superior across all metrics, making it the most reliable model for this dataset.
 
@@ -94,6 +96,7 @@ EfficientNetB0 is the best choice for deployment because it achieved 100% valida
 Even with perfect results, improvements are still possible. Using stronger data augmentation, collecting a larger and more diverse dataset, and applying ensemble methods can improve robustness. Fine-tuning EfficientNetB0, tuning hyperparameters, and using cross-validation would also help confirm and strengthen its real-world performance.
 
 G. Real-World Application
+
 16. How can your model be applied in real-world scenarios?
 The orchid classification system, especially the best model EfficientNetB0, has practical uses such as helping users identify orchids through photos, supporting growers in managing nursery plants, and assisting botanists in biodiversity monitoring and conservation work. It can also be extended for early pest or disease detection and used as an educational tool for learning orchid species.
 
